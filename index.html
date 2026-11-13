@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- SEO Metadata -->
+  <title>Pragya Soni | AI/ML Developer & Software Engineer Portfolio</title>
+  <meta name="description" content="Official portfolio of Pragya Soni — B.Tech CSE (AI/ML) student, AI/ML Developer, Software Engineer, Data Analyst, and NCC Cadet." />
+  <meta name="keywords" content="Pragya Soni, AI/ML Developer, Software Engineer, Data Analyst, Full Stack Developer, Machine Learning, Portfolio, B.Tech CSE" />
+  <meta name="author" content="Pragya Soni" />
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Pragya Soni | AI/ML Developer & Software Engineer" />
+  <meta property="og:description" content="Passionate about building intelligent solutions, exploring emerging technologies, and transforming innovative ideas into practical digital experiences." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS SDK (Optional silent sending; works out-of-the-box without it) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <!-- Main Script -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Custom Desktop Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Ambient Animated Gradient Mesh Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Pragya Soni Home">
+        <span class="logo-bracket">&lt;</span>PS<span class="logo-bracket">/&gt;</span>
+        <span class="brand-name">Pragya Soni</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Light/Dark Mode Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Light and Dark Theme" title="Switch Theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 1. HERO SECTION (NO PROFILE IMAGE) ==================== -->
+    <section class="hero section" id="home">
+      <div class="container">
+        <div class="hero-centered reveal">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Open to AI/ML &amp; Software Engineering Opportunities
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Pragya Soni</span>
+          </h1>
+
+          <p class="hero-headline">
+            AI/ML Developer <span class="divider">|</span> Software Engineer <span class="divider">|</span> Data Analyst <span class="divider">|</span> Tech Enthusiast
+          </p>
+
+          <!-- Animated Typing Text -->
+          <div class="typing-wrapper" aria-live="polite">
+            <span class="typing-prefix">&gt;_ Focusing on </span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-description">
+            "Passionate about building intelligent solutions, exploring emerging technologies, and transforming innovative ideas into practical digital experiences."
+          </p>
+
+          <div class="hero-highlights">
+            <span class="highlight-pill">B.Tech CSE (AI/ML)</span>
+            <span class="highlight-pill">NCC Cadet</span>
+            <span class="highlight-pill">AI &amp; Fuzzy Sets Researcher</span>
+          </div>
+
+          <div class="hero-cta">
+            <a href="resume.pdf" download="Pragya_Soni_Resume.pdf" class="btn btn-primary" id="download-resume-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
+
+            <a href="#projects" class="btn btn-secondary">
+              View Projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <a href="https://github.com/Pragya7667" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pragya-soni-4b5149334/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:sonipragya7667@gmail.com" class="social-icon" aria-label="Email Pragya Soni">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT ME SECTION ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 // Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio glass-card reveal">
+            <h3>Bridging Artificial Intelligence &amp; Scalable Software</h3>
+            <p>
+              I am a <strong>Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning</strong> at Allenhouse Institute of Technology (2024–2028), driven by a commitment to engineering practical, intelligent, and user-centric software systems.
+            </p>
+            <p>
+              Alongside my technical pursuits, I serve as an <strong>NCC Cadet</strong>, which has shaped my approach to leadership, discipline, teamwork, and continuous learning under pressure. Whether building NLP pipelines, full-stack web applications, or exploring fuzzy logic in AI decision-making, I focus on clean architecture and measurable impact.
+            </p>
+
+            <!-- Verified Counters Only -->
+            <div class="verified-metrics">
+              <div class="metric-item">
+                <span class="metric-number" data-target="3">0</span>
+                <span class="metric-label">Core Projects Built</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number" data-target="2">0</span>
+                <span class="metric-label">Internships Completed</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number" data-target="1">0</span>
+                <span class="metric-label">Rank 1 Certificate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-interests glass-card reveal">
+            <h3>Core Areas of Interest</h3>
+            <ul class="interest-list">
+              <li>
+                <span class="interest-icon">◈</span>
+                <div>
+                  <strong>Artificial Intelligence &amp; Machine Learning</strong>
+                  <p>Predictive modeling, deep learning architectures, and intelligent automation.</p>
+                </div>
+              </li>
+              <li>
+                <span class="interest-icon">◈</span>
+                <div>
+                  <strong>Data Science &amp; Data Analytics</strong>
+                  <p>Statistical analysis, data mining, and actionable insight extraction.</p>
+                </div>
+              </li>
+              <li>
+                <span class="interest-icon">◈</span>
+                <div>
+                  <strong>Full Stack Web Development</strong>
+                  <p>Responsive, accessible interfaces backed by clean Python/Django APIs.</p>
+                </div>
+              </li>
+              <li>
+                <span class="interest-icon">◈</span>
+                <div>
+                  <strong>Natural Language Processing</strong>
+                  <p>Semantic text matching, generative AI workflows, and prompt engineering.</p>
+                </div>
+              </li>
+              <li>
+                <span class="interest-icon">◈</span>
+                <div>
+                  <strong>Software Development, Research &amp; DSA</strong>
+                  <p>Algorithmic problem solving, structured system design, and academic innovation.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. TECHNICAL SKILLS SECTION ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 // Technical Stack</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">
+            Structured across core engineering domains and easily customizable in <code>script.js</code>.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skills-container"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. EXPERIENCE & INTERNSHIPS ==================== -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 // Career Journey</span>
+          <h2 class="section-title">Experience &amp; <span class="gradient-text">Internships</span></h2>
+        </div>
+
+        <div class="timeline" id="experience-timeline">
+          <!-- Experience Item 1: GAO Tek Inc. -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Internship • 3 Months</span>
+                  <h3>AI Tech Writer and Data Mining Intern</h3>
+                  <h4 class="company-name">GAO Tek Inc.</h4>
+                </div>
+                <span class="timeline-date">2025</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Worked on AI and data mining related tasks across structured and unstructured datasets.</li>
+                <li>Researched and processed information from multiple sources to support technical accuracy.</li>
+                <li>Applied Python and data analysis concepts to organize patterns and findings.</li>
+                <li>Prepared clear technical articles, analytical reports, and structured documentation.</li>
+              </ul>
+              <div class="tag-group">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Data Mining</span>
+                <span class="tech-tag">AI Research</span>
+                <span class="tech-tag">Technical Documentation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience Item 2: Infosys Springboard -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Virtual Internship</span>
+                  <h3>Virtual Internship 7.0</h3>
+                  <h4 class="company-name">Infosys Springboard</h4>
+                </div>
+                <span class="timeline-date">2025 – 2026</span>
+              </div>
+              <p class="timeline-summary">Comprehensive industry-aligned technical training and implementation covering:</p>
+              <div class="tag-group">
+                <span class="tech-tag">Artificial Intelligence</span>
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">Generative AI</span>
+                <span class="tech-tag">Prompt Engineering</span>
+                <span class="tech-tag">OpenAI GPT Models</span>
+                <span class="tech-tag">RPA</span>
+                <span class="tech-tag">Agile Scrum</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. PROJECTS SECTION (NO LIVE DEMO BUTTONS) ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 // Featured Work</span>
+          <h2 class="section-title">Engineering <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">
+            Selected AI/ML and web engineering architectures built with clean code and practical impact.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-container"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. CERTIFICATIONS GALLERY (NO VIEW BUTTONS) ==================== -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 // Credentials</span>
+          <h2 class="section-title">Verified <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">
+            Technical certifications, diplomas, and industry training milestones.
+          </p>
+        </div>
+
+        <div class="cert-grid" id="certifications-container"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. ACHIEVEMENTS & RESEARCH ==================== -->
+    <section class="research section" id="research">
+      <div class="container">
+        <div class="two-col-section">
+          <!-- Achievements & Activities -->
+          <div class="reveal">
+            <div class="section-header left-align">
+              <span class="section-tag">06 // Milestones</span>
+              <h2 class="section-title">Achievements &amp; <span class="gradient-text">Activities</span></h2>
+            </div>
+
+            <div class="achievement-stack" id="achievements-container">
+              <div class="achievement-card glass-card">
+                <div class="ach-icon">★</div>
+                <div>
+                  <h3>Rank 1 Certificate</h3>
+                  <p>Awarded Rank 1 recognition for academic/technical excellence.</p>
+                </div>
+              </div>
+
+              <div class="achievement-card glass-card">
+                <div class="ach-icon">◈</div>
+                <div>
+                  <h3>National Cadet Corps (NCC) Cadet</h3>
+                  <p>Demonstrated leadership, discipline, resilience, and collaborative teamwork through structured cadet training.</p>
+                </div>
+              </div>
+
+              <div class="achievement-card glass-card">
+                <div class="ach-icon">⚡</div>
+                <div>
+                  <h3>Smart India Hackathon (SIH)</h3>
+                  <p>Participated in Smart India Hackathon with hands-on rapid prototyping and problem-solving project experience.</p>
+                </div>
+              </div>
+
+              <div class="achievement-card glass-card">
+                <div class="ach-icon">⌘</div>
+                <div>
+                  <h3>Technical Competitions &amp; Research</h3>
+                  <p>Active competitor in coding/AI hackathons with focused research interests in AI and Fuzzy Sets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research & Innovation -->
+          <div class="reveal">
+            <div class="section-header left-align">
+              <span class="section-tag">07 // Academic Exploration</span>
+              <h2 class="section-title">Research &amp; <span class="gradient-text">Innovation</span></h2>
+            </div>
+
+            <div class="research-panel glass-card">
+              <p class="research-intro">
+                Exploring mathematical modeling and intelligent algorithms to handle uncertainty and improve automated decision-making systems:
+              </p>
+
+              <div class="research-topics">
+                <div class="research-item">
+                  <span class="r-index">01</span>
+                  <div>
+                    <h4>Fuzzy Sets in AI Decision-Making</h4>
+                    <p>Investigating fuzzy logic frameworks to model ambiguity, imprecise inputs, and multi-criteria decision systems.</p>
+                  </div>
+                </div>
+
+                <div class="research-item">
+                  <span class="r-index">02</span>
+                  <div>
+                    <h4>Artificial Intelligence</h4>
+                    <p>Designing reasoning architectures and practical AI pipelines for real-world problem domains.</p>
+                  </div>
+                </div>
+
+                <div class="research-item">
+                  <span class="r-index">03</span>
+                  <div>
+                    <h4>Machine Learning</h4>
+                    <p>Supervised and unsupervised pattern discovery, feature engineering, and model generalization.</p>
+                  </div>
+                </div>
+
+                <div class="research-item">
+                  <span class="r-index">04</span>
+                  <div>
+                    <h4>Intelligent Recommendation Systems</h4>
+                    <p>Semantic similarity scoring, NLP-based profile matching, and personalized career/learning engines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. WORKING CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">08 // Get In Touch</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-subtitle">
+            Have an internship opportunity, hackathon team invite, or research collaboration? Send a message below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass-card reveal">
+            <h3>Direct Channels</h3>
+            <p>
+              I am actively looking for software engineering, AI/ML development, and data analytics internships and collaborative projects.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:sonipragya7667@gmail.com" class="contact-link-item">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="c-label">Email</span>
+                  <span class="c-value">sonipragya7667@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/pragya-soni-4b5149334/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="c-label">LinkedIn</span>
+                  <span class="c-value">linkedin.com/in/pragya-soni-4b5149334</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/Pragya7667" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="c-label">GitHub</span>
+                  <span class="c-value">github.com/Pragya7667</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Working Contact Form -->
+          <form class="contact-form glass-card reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="from_name" placeholder="e.g., Rohan Verma" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="reply_to" placeholder="e.g., rohan@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Project Collaboration" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="current-year"></span> <strong>Pragya Soni</strong>. Engineered with HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+      <a href="#home" class="footer-top-link">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
